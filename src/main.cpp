@@ -27,7 +27,11 @@ void saveRangeToFile(const string& filename, const vector<LogEntry>& data, int s
     }
 }
 
-int main() {
+int main(int argc, char* argv[]) {
+    string fileNum = "607";
+    if (argc > 1) {
+        fileNum = argv[1];
+    }
     bool running = true;
     while (running) {
         cout << termcolor::green << "\n=== Actividad Integradora ===" << termcolor::reset << "\n";
@@ -93,8 +97,8 @@ int main() {
         else if (algChoice == 2) cout << "Complejidad teorica: O(N) mejor caso, O(N^2) peor caso\n";
         else if (algChoice == 3) cout << "Complejidad teorica: O(N log N) mejor y peor caso\n";
 
-        saveToFile("output607.txt", logs);
-        cout << termcolor::green << "Datos ordenados guardados en output607.txt" << termcolor::reset << "\n";
+        saveToFile("output" + fileNum + ".txt", logs);
+        cout << termcolor::green << "Datos ordenados guardados en output" << fileNum << ".txt" << termcolor::reset << "\n";
 
         cout << termcolor::green << "\n=== Busqueda por rango ===" << termcolor::reset << "\n";
         cout << "Ingrese la fecha/hora de INICIO (ej. 2024:09:08-00:22:43) (YYYY:MM:DD-HH:MM:SS): ";
@@ -121,8 +125,8 @@ int main() {
 
         if (lowerIdx < upperIdx) {
             cout << termcolor::green << "Registros encontrados en el rango: " << (upperIdx - lowerIdx) << termcolor::reset << "\n";
-            saveRangeToFile("range607.txt", logs, lowerIdx, upperIdx);
-            cout << termcolor::green << "Resultados guardados en range607.txt" << termcolor::reset << "\n";
+            saveRangeToFile("range" + fileNum + ".txt", logs, lowerIdx, upperIdx);
+            cout << termcolor::green << "Resultados guardados en range" << fileNum << ".txt" << termcolor::reset << "\n";
         } else {
             cout << termcolor::red << "No se encontraron registros en ese rango." << termcolor::reset << "\n";
         }

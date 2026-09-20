@@ -8,6 +8,7 @@ De acuerdo con el requerimiento de hacer un diseño minimalista usando archivos 
    - Se creó la clase `LogEntry` para almacenar tanto la línea original del log como una llave (`datetimeKey` en formato `YYYYMMDDHHMMSS`) para comparar y ordenar fácilmente los registros.
    - El parsing está encapsulado dentro del constructor `LogEntry(std::string)`, con métodos privados que extraen la información (mes, día, año, hora, minuto y segundo) del string del log y la convierten en el formato ordenable numéricamente.
    - Se sobrecargaron los operadores relacionales (`<`, `>`, `<=`, `>=`, `==`) para que la clase funcione de manera nativa con algoritmos de ordenamiento genéricos.
+   (Github Copilot ayudó en las sobrecargas de <= y =>)
 
 2. **Algoritmos de Ordenamiento (`include/SortingAlgorithms.hpp`)**:
    - Se adaptaron los algoritmos como se pedía, extrayéndolos del archivo base `Act1.5-SortAlgorithms.cpp`.
