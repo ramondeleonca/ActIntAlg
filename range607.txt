@@ -1,0 +1,4 @@
+Sep 08 2024 00:22:43 10.14.168.155 Unencrypted communication
+Sep 08 2024 04:37:37 10.14.248.79 Configuration errors
+Sep 08 2024 04:44:15 10.14.135.12 Application error
+Sep 08 2024 05:50:57 10.14.22.235 Changes in File Integrity
