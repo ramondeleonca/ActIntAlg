@@ -1,5 +1,7 @@
 # Evidencia 1 - Actividad Integral de Conceptos Básicos y Algoritmos Fundamentales
 
+VIDEO: https://youtu.be/qD-fMYgEtMg
+
 ## ¿Qué se hizo?
 
 De acuerdo con el requerimiento de hacer un diseño minimalista usando archivos header y un `main.cpp` simplificado:
