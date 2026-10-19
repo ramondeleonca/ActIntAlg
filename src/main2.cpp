@@ -256,7 +256,7 @@ int main() {
                 cout << termcolor::magenta << "Total de registros: " << termcolor::reset << total << "\n";
                 if (!maxDay.empty() && maxCount > 0) {
                     cout << termcolor::yellow << "Dia con mas incidentes: " << termcolor::reset
-                         << maxDay << " (" << maxCount << " incidentes)\n";
+                        << maxDay << " (" << maxCount << " incidentes)\n";
                 }
                 break;
             }
